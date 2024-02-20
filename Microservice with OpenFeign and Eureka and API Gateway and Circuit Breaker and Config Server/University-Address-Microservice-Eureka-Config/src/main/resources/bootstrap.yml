@@ -1,0 +1,18 @@
+spring:
+  profiles: dev
+  cloud:
+    config:
+      name: myconfig
+      profile: default
+      label: demo
+      uri: http://localhost:9196
+        
+---        
+spring:
+  profiles: qa
+  cloud:
+    config:
+      name: myconfig
+      profile: default
+      label: demo
+      uri: http://localhost:9197
